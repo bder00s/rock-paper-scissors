@@ -22,12 +22,12 @@ function App() {
             case 'scissorspaper':
             case 'rockscissors':
             case 'paperrock':
-                setResult('You win!')
+                setResult('You win! 🥳')
                 break;
             case 'paperscissors':
             case 'scissorsrock':
             case'rockpaper':
-                setResult('You lose!')
+                setResult('You lose! 😿')
                 break;
             case 'rockrock':
             case 'paperpaper':
@@ -41,14 +41,15 @@ function App() {
 
     return (
         <div className="App">
-            <h1>User choice is: {userChoice}</h1>
-            <h1>Computer choice is: {computerChoice}</h1>
+            <h1>🪨, 🧻, ✂️ </h1>
+            <h2>User choice: {userChoice}</h2>
+            <h2>Computer choice: {computerChoice}</h2>
 
             {choices.map((choice, index) => <button key={index} onClick={() => handleClick(choice)}>{choice}</button>)}
 
             <h1>{result}</h1>
 
-            <h2>test test</h2>
+
 
 
         </div>
